@@ -1,0 +1,585 @@
+{
+	"info": {
+		"_postman_id": "b6f4e39d-77eb-44dc-8b29-95537186dbbd",
+		"name": "NinjaPoc",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "saveAll",
+			"item": [
+				{
+					"name": "saveAllOS",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"name\": \"Windows\"\r\n    },\r\n    {\r\n        \"name\": \"Mac\"\r\n    },\r\n    {\r\n        \"name\": \"Linux\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/oss",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"oss"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "saveAllUtilities",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"name\": \"Base\"\r\n    },\r\n    {\r\n        \"name\": \"Antivirus\"\r\n    },\r\n    {\r\n        \"name\": \"Backup\"\r\n    },\r\n    {\r\n        \"name\": \"ScreenShare\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/utilities",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"utilities"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "saveAllDevice",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"name\": \"DeviceN78\",\r\n        \"os\": {\r\n            \"id\": 1\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"Develop1\",\r\n        \"os\": {\r\n            \"id\": 2\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"mac_qa_2\",\r\n        \"os\": {\r\n            \"id\": 2\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"ProdNode48\",\r\n        \"os\": {\r\n            \"id\": 1\r\n        }\r\n    },\r\n    {\r\n        \"name\": \"ProdNode49\",\r\n        \"os\": {\r\n            \"id\": 1\r\n        }\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/devices",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"devices"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "saveAllServices",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"os\": {\r\n            \"id\": 1\r\n        },\r\n        \"utility\": {\r\n            \"id\": 1\r\n        },\r\n        \"price\": 4\r\n    },\r\n    {\r\n        \"os\": {\r\n            \"id\": 2\r\n        },\r\n        \"utility\": {\r\n            \"id\": 1\r\n        },\r\n        \"price\": 4\r\n    },\r\n    {\r\n        \"os\": {\r\n            \"id\": 1\r\n        },\r\n        \"utility\": {\r\n            \"id\": 2\r\n        },\r\n        \"price\": 5\r\n    },\r\n    {\r\n        \"os\": {\r\n            \"id\": 2\r\n        },\r\n        \"utility\": {\r\n            \"id\": 2\r\n        },\r\n        \"price\": 7\r\n    },\r\n    {\r\n        \"os\": {\r\n            \"id\": 1\r\n        },\r\n        \"utility\": {\r\n            \"id\": 3\r\n        },\r\n        \"price\": 3\r\n    },\r\n    {\r\n        \"os\": {\r\n            \"id\": 2\r\n        },\r\n        \"utility\": {\r\n            \"id\": 3\r\n        },\r\n        \"price\": 3\r\n    },\r\n    {\r\n        \"os\": {\r\n            \"id\": 1\r\n        },\r\n        \"utility\": {\r\n            \"id\": 4\r\n        },\r\n        \"price\": 1\r\n    },\r\n    {\r\n        \"os\": {\r\n            \"id\": 2\r\n        },\r\n        \"utility\": {\r\n            \"id\": 4\r\n        },\r\n        \"price\": 1\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/services",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"services"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "saveAllRecords",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"service\": {\r\n            \"id\": 1\r\n        },\r\n        \"device\": {\r\n            \"id\": 1\r\n        }\r\n    },\r\n    {\r\n        \"service\": {\r\n            \"id\": 3\r\n        },\r\n        \"device\": {\r\n            \"id\": 1\r\n        }\r\n    },\r\n    {\r\n        \"service\": {\r\n            \"id\": 5\r\n        },\r\n        \"device\": {\r\n            \"id\": 1\r\n        }\r\n    },\r\n    {\r\n        \"service\": {\r\n            \"id\": 7\r\n        },\r\n        \"device\": {\r\n            \"id\": 1\r\n        }\r\n    },\r\n    {\r\n        \"service\": {\r\n            \"id\": 1\r\n        },\r\n        \"device\": {\r\n            \"id\": 4\r\n        }\r\n    },\r\n    {\r\n        \"service\": {\r\n            \"id\": 3\r\n        },\r\n        \"device\": {\r\n            \"id\": 4\r\n        }\r\n    },\r\n    {\r\n        \"service\": {\r\n            \"id\": 5\r\n        },\r\n        \"device\": {\r\n            \"id\": 4\r\n        }\r\n    },\r\n    {\r\n        \"service\": {\r\n            \"id\": 1\r\n        },\r\n        \"device\": {\r\n            \"id\": 5\r\n        }\r\n    },\r\n    {\r\n        \"service\": {\r\n            \"id\": 3\r\n        },\r\n        \"device\": {\r\n            \"id\": 5\r\n        }\r\n    },\r\n    {\r\n        \"service\": {\r\n            \"id\": 5\r\n        },\r\n        \"device\": {\r\n            \"id\": 5\r\n        }\r\n    },\r\n    {\r\n        \"service\": {\r\n            \"id\": 7\r\n        },\r\n        \"device\": {\r\n            \"id\": 5\r\n        }\r\n    },\r\n    {\r\n        \"service\": {\r\n            \"id\": 2\r\n        },\r\n        \"device\": {\r\n            \"id\": 2\r\n        }\r\n    },\r\n    {\r\n        \"service\": {\r\n            \"id\": 4\r\n        },\r\n        \"device\": {\r\n            \"id\": 2\r\n        }\r\n    },\r\n    {\r\n        \"service\": {\r\n            \"id\": 6\r\n        },\r\n        \"device\": {\r\n            \"id\": 2\r\n        }\r\n    },\r\n    {\r\n        \"service\": {\r\n            \"id\": 8\r\n        },\r\n        \"device\": {\r\n            \"id\": 2\r\n        }\r\n    },\r\n        {\r\n        \"service\": {\r\n            \"id\": 2\r\n        },\r\n        \"device\": {\r\n            \"id\": 3\r\n        }\r\n    },\r\n    {\r\n        \"service\": {\r\n            \"id\": 4\r\n        },\r\n        \"device\": {\r\n            \"id\": 3\r\n        }\r\n    },\r\n    {\r\n        \"service\": {\r\n            \"id\": 8\r\n        },\r\n        \"device\": {\r\n            \"id\": 3\r\n        }\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/records",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"records"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "GetAll",
+			"item": [
+				{
+					"name": "getAllOS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/os",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"os"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllUtilities",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/utilities",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"utilities"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllDevices",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/devices",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"devices"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllServices",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/services",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"services"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllRecords",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/records",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"records"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetSummaryByDeviceId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/summary/device/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"summary",
+								"device",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetSummaryByService",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/summary/services",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"summary",
+								"services"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetSummaryByDevices",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/summary/devices",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"summary",
+								"devices"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Save",
+			"item": [
+				{
+					"name": "saveDevice",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"DevelopWin35\",\r\n    \"os\": {\r\n        \"id\": 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/device",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"device"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "saveService",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"os\": {\r\n        \"id\": 3\r\n    },\r\n    \"utility\": {\r\n        \"id\": 1\r\n    },\r\n    \"price\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/service",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "saveRecord",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"service\": {\r\n        \"id\": 1\r\n    },\r\n    \"device\": {\r\n        \"id\": 6\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/record",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"record"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "saveUtility",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Cloud\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/utility",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"utility"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "saveOS",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"AIX\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/os",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"os"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Delete",
+			"item": [
+				{
+					"name": "deleteRecord",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/record/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"record",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteService",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/service/15",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"service",
+								"15"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteOS",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/os/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"os",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteDevice",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/device/25",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"device",
+								"25"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteUtility",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/utility/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"utility",
+								"10"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
