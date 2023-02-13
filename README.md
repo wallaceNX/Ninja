@@ -4,6 +4,9 @@ This project contains [Instructions](INSTRUCTIONS.md) that must be read in order
 Also the project is configured to use an in-memory H2 database that is volatile. If you wish to make it maintain data on
 application shut down, you can change the spring.database.jdbc-url to point at a file like `jdbc:h2:file:/{your file path here}`
 
+## Starting the Solution
+According to the indicated instructions [Instructions](INSTRUCTIONS.md), the solution made based on the indicated template is presented [explanation](EXPLANATION.md).
+
 ## Starting the Application
 
 Run the `BackendInterviewProjectApplication` class
